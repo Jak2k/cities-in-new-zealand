@@ -1,4 +1,5 @@
 import { SlideProps } from "../App";
+import CtaButton from "../components/CtaButton";
 import List from "../components/List";
 import Slide from "../components/Slide";
 
@@ -17,6 +18,10 @@ export default function ToCSlide({ controls }: SlideProps) {
           ]}
         />
       )}
+      <CtaButton
+        label="Let's start with Auckland"
+        onClick={controls.nextSlide}
+      />
     </Slide>
   );
 }

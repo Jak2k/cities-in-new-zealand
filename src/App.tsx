@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TitleSlide from "./slides/Title";
 import ToCSlide from "./slides/ToC";
+import Auckland from "./slides/Auckland";
 
 type Controls = {
   nextSlide: () => void;
@@ -17,7 +18,7 @@ export type SlideProps = {
 
 type Slide = (props: SlideProps) => JSX.Element;
 
-const slides: Slide[] = [TitleSlide, ToCSlide];
+const slides: Slide[] = [TitleSlide, ToCSlide, Auckland];
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
