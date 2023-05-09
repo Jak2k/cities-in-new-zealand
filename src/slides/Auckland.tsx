@@ -2,7 +2,7 @@ import { SlideProps } from "../App";
 import List from "../components/List";
 import Slide from "../components/Slide";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// @ts-ingnore
 export default function Auckland({ controls }: SlideProps) {
   return (
     <Slide>
