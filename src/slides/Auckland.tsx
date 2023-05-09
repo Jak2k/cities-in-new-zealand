@@ -2,7 +2,8 @@ import { SlideProps } from "../App";
 import List from "../components/List";
 import Slide from "../components/Slide";
 
-// @ts-ingnore
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 export default function Auckland({ controls }: SlideProps) {
   return (
     <Slide>
