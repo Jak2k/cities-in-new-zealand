@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import TitleSlide from "./slides/Title";
 import ToCSlide from "./slides/ToC";
 import Auckland from "./slides/Auckland";
+import Christchurch from "./slides/Christchurch";
+import Wellington from "./slides/Wellington";
+import Hamilton from "./slides/Hamilton";
+import Tauranga from "./slides/Tauranga";
 
 type Controls = {
   nextSlide: () => void;
@@ -18,7 +22,15 @@ export type SlideProps = {
 
 type Slide = (props: SlideProps) => JSX.Element;
 
-const slides: Slide[] = [TitleSlide, ToCSlide, Auckland];
+const slides: Slide[] = [
+  TitleSlide,
+  ToCSlide,
+  Auckland,
+  Christchurch,
+  Wellington,
+  Hamilton,
+  Tauranga,
+];
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
