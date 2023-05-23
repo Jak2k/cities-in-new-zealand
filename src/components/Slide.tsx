@@ -65,7 +65,11 @@ export default function Slide({
               document.fullscreenElement !== document.documentElement
                 ? 1
                 : 0.5,
-            filter: document.fullscreenElement ? "" : "grayscale(80%)",
+            filter:
+              document.fullscreenElement &&
+              document.fullscreenElement !== document.documentElement
+                ? ""
+                : "grayscale(80%)",
           }}
         ></iframe>
       ) : (
