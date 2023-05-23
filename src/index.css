@@ -14,8 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+body,
+#root {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -89,6 +91,14 @@ button.cta {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.controls button {
+  border-radius: 0;
+}
+
+.controls button:last-child {
+  border-radius: 0 8px 0 0;
 }
 
 /* Fade in with spring */

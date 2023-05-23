@@ -1,12 +1,14 @@
 import { SlideProps } from "../App";
-import CtaButton from "../components/CtaButton";
 import Slide from "../components/Slide";
 
-export default function TitleSlide({ controls }: SlideProps) {
+// eslint-disable-next-line no-empty-pattern
+export default function TitleSlide({}: SlideProps) {
   return (
-    <Slide>
+    <Slide
+      picture="https://cdn.pixabay.com/photo/2015/09/06/11/10/auckland-927242_960_720.jpg"
+      forceBackgroundImage
+    >
       <h1>Cities in New Zealand</h1>
-      <CtaButton label="Start" onClick={controls.nextSlide} />
     </Slide>
   );
 }

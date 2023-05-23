@@ -7,7 +7,10 @@ import Slide from "../components/Slide";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Wellington({ controls }: SlideProps) {
   return (
-    <Slide picture="https://upload.wikimedia.org/wikipedia/commons/c/cb/Wellington_city_with_Cable_Car.jpg">
+    <Slide
+      picture="https://upload.wikimedia.org/wikipedia/commons/c/cb/Wellington_city_with_Cable_Car.jpg"
+      video={{ type: "youtube", id: "cUkoqppoFr8" }}
+    >
       <h2>Wellington</h2>
       <p>
         Wellington is the capital city of New Zealand and the second most
