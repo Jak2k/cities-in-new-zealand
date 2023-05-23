@@ -58,7 +58,13 @@ export default function Slide({
           style={{
             border: "none",
             borderRadius: "1em",
-            opacity: document.fullscreenElement ? 1 : 0.5,
+            opacity:
+              document.fullscreenElement &&
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
+              document.fullscreenElement === document
+                ? 1
+                : 0.5,
             filter: document.fullscreenElement ? "" : "grayscale(80%)",
           }}
         ></iframe>
